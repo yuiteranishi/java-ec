@@ -6,7 +6,10 @@ spring:
     password:
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: create-drop
+    properties:
+      jakarta.persistence.sql-load-script-source: import.sql
+      hibernate.hbm2ddl.import_files_sql_extractor: org.hibernate.tool.schema.internal.script.MultiLineSqlScriptExtractor
     show-sql: true
   h2:
     console:
