@@ -15,6 +15,23 @@ spring:
     console:
       enabled: true
       path: /h2-console
+  messages:
+    basename: messages
+    encoding: UTF-8
+  mail:
+    host: smtp.mailtrap.io
+    port: 2525
+    username: 75caa155932608
+    password: 9db2426d65046e
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
 
 server:
   port: 8080
+  messages:
+    basename: messages
+    encoding: UTF-8
