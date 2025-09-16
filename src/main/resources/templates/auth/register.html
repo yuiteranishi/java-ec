@@ -16,6 +16,7 @@
         </div>
         <!-- Email -->
         <div><label>Email <input type="email" th:field="*{email}" required></label></div>
+        <div th:if="${#fields.hasErrors('email')}" style="color:#c00" th:errors="*{email}">dn err</div>
         <!-- Display Name -->
         <div><label>Display Name <input type="text" th:field="*{displayName}" required></label>
             <div th:if="${#fields.hasErrors('displayName')}" style="color:#c00" th:errors="*{displayName}">dn err</div>
