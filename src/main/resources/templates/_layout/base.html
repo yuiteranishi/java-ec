@@ -16,8 +16,15 @@
 <!-- ヘッダ（共通） -->
 <header>
     <nav>
-        <a th:href="@{/}">Home</a> |
-        <a th:href="@{/products}">Products</a>
+        <span sec:authorize="isAuthenticated()">
+            <span style="float:light">
+                <a th:href="@{/}">Home</a> |
+                <a th:href="@{/products}">Products</a>
+                <span sec:authorize="hasRole('ADMIN')">
+                     | <a th:href="@{/admin/products}">Admin</a>
+                </span>
+            </span>
+        </span>
         <span style="float:right">
             <span sec:authorize="isAuthenticated()">
                 Hello, <span th:text="${#authentication.name}">user</span> |
