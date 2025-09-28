@@ -11,7 +11,7 @@ INSERT INTO products (name, price, description, stock_qty, image_url, category_i
 -- 例：$2a$10$7EqJtq98hPqEX7fNZaFWoO.J8vtQ6Uiq5FvlaZ6Y.j3B3VY6Yf/DO
 -- どちらのユーザーも同じハッシュを使っています（学習用）
 INSERT INTO users (email, password_hash, display_name, role, enabled, created_at, updated_at)
-VALUES ('admin@example.com','$2a$10$7EqJtq98hPqEX7fNZaFWoO.J8vtQ6Uiq5FvlaZ6Y.j3B3VY6Yf/DO','Administrator', 'ADMIN', TRUE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+VALUES ('admin@example.com','$2a$10$N7s8J2HQxWR5t.6cw8hreuEaXhn.puodBPzE0sLQKL55yuGui3fs6','Administrator', 'ADMIN', TRUE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
 
 INSERT INTO users (email, password_hash, display_name, role, enabled, created_at, updated_at)
-VALUES ('user@example.com','$2a$10$7EqJtq98hPqEX7fNZaFWoO.J8vtQ6Uiq5FvlaZ6Y.j3B3VY6Yf/DO','Sample User', 'USER', TRUE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
+VALUES ('user@example.com','$2a$10$N7s8J2HQxWR5t.6cw8hreuEaXhn.puodBPzE0sLQKL55yuGui3fs6','Sample User', 'USER', TRUE, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP);
